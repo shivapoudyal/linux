@@ -1,0 +1,29 @@
+
+//----------------- COMMANDS -------------------- //
+
+1) Add an user => useradd kartik (it will add user and its all details saves in /etc/passwd, it creates a seprate group for this user as well)
+    eg. user & its path = kartik:x:400:1000:kartik:/home/kartik:/bin/bash (400 is group ID & 1000 is user ID )
+
+2) Add Password = passwd kartik (user Password saves in /etc/shadow as encrypted format) #SAME COMMAND FOR UPDATE PASSWORD AS WELL
+
+3) Delete User = deluser kartik
+
+4) Get User Details = id kartik (gives uid, gid, etc...)
+
+5) Groups List = /etc/group (in this file all the group stores with their ids)
+
+6) Add a Group = groupadd tech (it will add A group by the name of "tech")
+
+6) Add user into another group = usermod -G tech kartik (kartik is added into "tech" group )
+
+7) Add user into multiple group = usermod --append --group tech,devops kartik (Now user "kartik" is added into given groups name, don't keep any space while mentioning group name, it reads space as a group too)
+
+8) Expire a user with given date = usermod --expiredate YYYY-MM-DD kartik (this user will delete on given date automatically)
+
+9) Add a user with expiredate = useradd -e YYYY-MM-DD kartik (this user will create and delete on given time automatically)
+
+9) Home Address change for a user = usermod --home /tmp kartik (Now "kartik" user's home dir change to "tmp", by default it sets to "home" dir  )
+
+10) Change Directory Ownership = chown newownername file/dirname
+
+11) Change Directory/File Ownership & Group = chown file/dirname newownername:groupname
