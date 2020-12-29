@@ -1,0 +1,10 @@
+1) Select a specific line or word -> Alt + a
+2) Copy selected line or word -> Alt + ^
+3) Cut a line or word -> Alt + k
+4) Paste a cutted or copied line -> Cntrl + u
+5) Go to bottom of the page -> Alt + /
+6) Go to top of the page -> Alt + \
+7) Go to line no -> Alt + g
+8) Searching a word -> Cntrl + w
+9) Make Undo -> Esc + u
+10) Make Redo -> Esc + e
